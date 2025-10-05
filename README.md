@@ -10,7 +10,7 @@ class Car {
 
     // Method - all cars have a unique brand&model
     public void model() {
-        System.out.println("This car is a" + name +".");
+        System.out.println("My car is a" + name +".");
     }
 }
 
@@ -18,14 +18,14 @@ class Car {
 public class Demo {
     public static void main(String[] args) {
         // Create OBJECTS - concrete instances from blueprint
-        Car car1 = new Car("Ford-150");     // First object
-        Car car2 = new Car("Tesla-Cybertruck");   // Second object
+        Car mycar1 = new Car("Ford-150");     // First object
+        Car mycar2 = new Car("Tesla-Cybertruck");   // Second object
 
         // Each object has its own data
-        car1.model();  // Output: This car is a Ford-150.
-        car2.model();  // Output: This car is a Tesla-Cybertruck.
+        mycar1.model();  // Output: My car is a Ford-150.
+        mycar2.model();  // Output: My car is a Tesla-Cybertruck.
 
         // Prove they are different objects
-        System.out.println("Are they same? " + (car1 == car2)); // Output: false
+        System.out.println("Are they same? " + (mycar1 == mycar2)); // Output: false
     }
 }
